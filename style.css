@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* font */
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+
+  /* colors */
+  --white: #fff;
+  --background-color: #F4FCFF;
+  --primary-color: #065E7C;
+  --text-color: #121214;
+  --title-color: #202024; 
+}
+
+body {
+  font-size: 1.6rem;
+}
