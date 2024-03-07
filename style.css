@@ -166,6 +166,11 @@ footer p {
   text-align: center;
 }
 
+footer a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
 /* desktop version */
 @media (min-width: 1100px) {
   #blog {
