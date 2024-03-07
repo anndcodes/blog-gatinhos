@@ -13,12 +13,73 @@
 
   /* colors */
   --white: #fff;
-  --background-color: #F4FCFF;
-  --primary-color: #065E7C;
+  --background-color: #f4fcff;
+  --primary-color: #065e7c;
   --text-color: #121214;
-  --title-color: #202024; 
+  --title-color: #202024;
 }
 
 body {
   font-size: 1.6rem;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+h2,
+h3 {
+  color: var(--title-color);
+}
+
+#blog {
+  max-width: 43rem;
+  height: 100vh;
+  margin-inline: auto;
+  box-sizing: content-box;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.container {
+  padding-inline: 2.2rem;
+}
+
+header {
+  background: var(--primary-color);
+  padding: 1.6rem .6rem;
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+}
+
+header label {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+header input {
+  width: 24rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 0.4rem;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 1.2rem 0 1.2rem 1.4rem;
+  font-weight: 600;
+}
+
+header input::placeholder {
+  color: var(--white);
+}
+
+header .avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.scroll-content {
+  overflow-y: scroll;
 }
