@@ -47,8 +47,7 @@ h3 {
 }
 
 #blog {
-  /* max-width: 43rem; */
-  height: 100vh;
+  min-height: 100vh;
   margin-inline: auto;
   display: grid;
   grid-template-rows: max-content 1fr max-content;
@@ -79,7 +78,6 @@ header label {
 }
 
 header input {
-  /* width: 24rem; */
   width: 100%;
   background: rgba(255, 255, 255, 0.2);
   border: 0;
@@ -99,10 +97,6 @@ header .avatar {
   height: 4.2rem;
   border-radius: 50%;
   object-fit: cover;
-}
-
-.scroll-content {
-  overflow-y: scroll;
 }
 
 /* main */
@@ -151,4 +145,51 @@ footer p {
   color: var(--white);
   line-height: 0;
   text-align: center;
+}
+
+/* desktop version */
+@media (min-width: 1100px) {
+  #blog {
+    grid-template-areas:
+      "header header header"
+      "main main aside"
+      "footer footer footer";
+  }
+
+  #blog header {
+    grid-area: header;
+    padding-inline: 11rem;
+  }
+
+  #blog main {
+    grid-area: main;
+    max-width: 100rem;
+    margin: 4.4rem 3.4rem 3.9rem 11rem;
+  }
+
+  #blog aside {
+    grid-area: aside;
+    margin-right: 11rem;
+    max-width: 38.4rem;
+  }
+
+  #blog footer {
+    grid-area: footer;
+  }
+
+  article .container,
+  aside.container {
+    padding: 0;
+  }
+
+  article .container .article-title {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 3.1rem;
+  }
+
+  .article-img {
+    border-radius: 0.5rem;
+  }
 }
