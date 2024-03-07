@@ -15,6 +15,7 @@
   --white: #fff;
   --background-color: #f4fcff;
   --primary-color: #065e7c;
+  --secondary-color: #387e96;
   --text-color: #121214;
   --title-color: #202024;
 }
@@ -133,9 +134,21 @@ figure {
 }
 
 figure img {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 figcaption p {
   font-size: 1.4rem;
+}
+
+/* footer */
+footer {
+  background: var(--secondary-color);
+  padding-block: 2.7rem;
+}
+
+footer p {
+  color: var(--white);
+  line-height: 0;
+  text-align: center;
 }
