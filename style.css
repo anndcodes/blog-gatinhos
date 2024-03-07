@@ -104,11 +104,24 @@ article .article-img {
   width: 100%;
 }
 
+article .article-img:hover {
+  filter: hue-rotate(10deg) contrast(100%) saturate(200%);
+}
+
 article .container .article-title {
   margin-block: 3.1rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+.article-title .icons img {
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+
+.article-title .icons img:hover {
+  transform: scale(1.11);
 }
 
 article .container .article-title .icons img + img {
@@ -125,6 +138,12 @@ figure {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  transition: all 100ms ease-out;
+}
+
+figure:hover {
+  transform: scale(.97);
+  filter: hue-rotate(7deg) contrast(101%) saturate(200%);
 }
 
 figure img {
